@@ -54,10 +54,10 @@ def latest_checkpoint(path):
 
 
 def save(state, path, max_to_keep=None):
-    “”“
+    '''
     调用该方法，保存 state
     max_to_keep 为最多保存多少个ckpt
-    ”“”
+    '''
     checkpoints = glob.glob(os.path.join(path, "*.pt"))
 
     if not checkpoints:
